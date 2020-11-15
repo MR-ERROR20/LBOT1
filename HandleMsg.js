@@ -125,7 +125,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                 await aruga.joinGroupViaLink(linkgrup)
                       .then(async () => {
                           await aruga.sendText(from, 'Berhasil join grup via link!')
-                          await aruga.sendText(chekgrup.id, `Hai Penghuni sini\nIm 🔰 *BOT ./MrG3P5* 🔰 \nUntuk memunculkan fitur ketik ${prefix}menu`)
+                          await aruga.sendText(chekgrup.id, `Hai Penghuni sini\nIm ⚡LBOT⚡\nUntuk memunculkan fitur ketik ${prefix}menu`)
                       })
             } else {
                 let cgrup = await aruga.getAllGroups()
@@ -287,7 +287,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                         hehex += '╠➥ '
                         hehex += response.data.data[i].name.transliteration.id.toLowerCase() + '\n'
                             }
-                        hehex += '╚═〘 🔰 *BOT ./MrG3P5* 🔰 〙'
+                        hehex += '╚═〘 ⚡ LBOT ⚡ 〙'
                     aruga.reply(from, hehex, id)
                 })
             } catch(err) {
@@ -845,7 +845,7 @@ module.exports = HandleMsg = async (aruga, message) => {
                 hehex += '╠➥'
                 hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
             }
-            hehex += '╚═〘 *BOT ./MrG3P5* 〙'
+            hehex += '╚═〘 *LBOT* 〙'
             await aruga.sendTextWithMentions(from, hehex)
             break
         case 'botstatus': {
