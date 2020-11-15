@@ -9,7 +9,7 @@ const start = (aruga = new Client()) => {
     console.log(color(figlet.textSync('LBOT', { font: 'Ghost', horizontalLayout: 'default' })))
     console.log(color(figlet.textSync('----------------', { horizontalLayout: 'default' })))
     console.log(color('[DEV]'), color('LBOT', 'yellow'))
-    console.log(color('[~>>]'), color('BOT Started!', 'green'))
+    console.log(color('[~>>]'), color('LBOT Started!', 'green'))
 
     // Mempertahankan sesi agar tetap nyala
     aruga.onStateChanged((state) => {
